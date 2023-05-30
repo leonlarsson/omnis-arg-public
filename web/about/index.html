@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Omnis Challenge</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.webp" type="image/x-icon">
+    <!-- <script src="some Font Awesome kit link. Or include manually" crossorigin="anonymous"></script> -->
+</head>
+
+<body id="body">
+
+    <style>
+        body {
+            --text-color: #e31717;
+            text-align: left;
+            display: block;
+        }
+
+        hr {
+            border: 2px solid var(--text-color);
+            border-radius: 2px;
+            transition: border 0.3s ease-in-out;
+        }
+
+        q {
+            user-select: all;
+            cursor: copy;
+        }
+
+        ul.list {
+            line-height: 2.2rem;
+        }
+
+        #title,
+        #titleSmaller,
+        #subtitle {
+            color: var(--text-color);
+            transition: color 0.3s ease-in-out;
+        }
+
+        #subtitle {
+            font-size: 1.5rem;
+        }
+
+        .correct-answer {
+            color: #27914e;
+            text-decoration-line: underline;
+            user-select: all;
+            cursor: copy;
+        }
+
+        .about-container {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            /* width: 100%; */
+            padding-top: 20px;
+            padding-bottom: 100px;
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .about-container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .about-container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .about-container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .about-container {
+                max-width: 1140px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .about-container {
+                max-width: 1320px;
+            }
+        }
+    </style>
+
+
+    <div class="about-container">
+
+        <a href="/" id="title" style="font-weight: 300">The Omnis Challenge</a>
+        <br>
+        <span id="titleSmaller">A Bloodhunt ARG created by Leon San José Larsson and Tobias Solem
+            at Sharkmob.</span>
+        <br>
+        <button id="enableHighContrastButton" onclick="enableHighContrast()">Enable high contrast</button>
+        <button id="disableHighContrastButton" hidden onclick="disableHighContrast()">Disable high contrast</button>
+        <script>
+            function enableHighContrast() {
+                body.style.setProperty("--text-color", "#e2a2a2");
+                document.getElementById("enableHighContrastButton").hidden = true;
+                document.getElementById("disableHighContrastButton").hidden = false;
+            }
+
+            function disableHighContrast() {
+                body.style.setProperty("--text-color", "#e31717");
+                document.getElementById("enableHighContrastButton").hidden = false;
+                document.getElementById("disableHighContrastButton").hidden = true;
+
+            }
+        </script>
+        <hr>
+
+        <span id="title"><i class="fa-solid fa-align-left" style="margin-right: 10px;"></i>Summary</span>
+        <br>
+        <p id="subtitle">
+            The Omnis Challenge was an ARG for the game Bloodhunt. It ran from Thursday, April 27th to
+            Monday, May 1st 2023. The ARG is now over and winners have been contacted to receive their rewards, but the
+            website is still available in case you want to test your skills. Below you can also see details on the steps
+            required to solve all the stages, in addition to the total attempts on that stage, as well as a timer
+            showing the amount of time the community spent solving it.
+
+        </p>
+
+        <p id="subtitle">
+            On behalf of Sharkmob, I thank you all for
+            participating in this event. It was extremely fun to build and especially fun seeing the community come
+            together to solve some pretty difficult tasks. In total, we had 27,361 attempts in stages 1-10 from users
+            in 50 different countries.
+
+        </p>
+
+        <span id="subtitle" style="margin-bottom: 0;">
+            <i class="fa-solid fa-trophy" style="margin-right: 5px;"></i> The <a href="/stash-external/prizes.jpg"
+                target="_blank">prizes</a> were:</span>
+        <ul class="list" id="subtitle">
+            <li><b>1st:</b> Omnis statue, Xtrfy Bloodhunt keyboard, Gamer Advantage glasses, 3,000 tokens</li>
+            <li><b>2nd:</b> Xtrfy Bloodhunt keyboard, Gamer Advantage glasses, 1,000 tokens</li>
+            <li><b>3rd:</b> Xtrfy Bloodhunt keyboard, Gamer Advantage glasses, 500 tokens</li>
+            <li><b>4th:</b> Xtrfy Bloodhunt keyboard, Gamer Advantage glasses, 300 tokens</li>
+            <li><b>5th:</b> Xtrfy Bloodhunt keyboard, Gamer Advantage glasses, 300 tokens</li>
+        </ul>
+
+        <span id="subtitle">
+            Additionally, and to celebrate the community's efforts, everyone can redeem a special Avatar & Banner
+            using the code <span class="correct-answer">OMNISCHALLENGE23</span> <a
+                href="https://bloodhunt.com/profile/redeem-code" target="_blank">here</a>.
+        </span>
+
+        <hr />
+
+        <span id="title"><i class="fa-solid fa-list-check" style="margin-right: 10px;"></i>Stages</span>
+        <br>
+
+        <a href="https://bloodhunt.com/news/the-omnis-challenge" target="_blank" id="titleSmaller"
+            style="font-weight: 300">Stage 0:</a>
+        <br>
+        <span id="subtitle"><i class="fa-solid fa-clock"></i> 45 minutes spent solving</span>
+
+        <ul class="list" id="subtitle">
+            <li>At 5PM CEST, April 27th, a <a href="https://twitter.com/Bloodhunt/status/1651602770925944835"
+                    target="_blank">Tweet</a> and an <a href="https://bloodhunt.com/news/the-omnis-challenge"
+                    target="_blank">article on Bloodhunt.com</a>
+                are published announcing The Omnis Challenge</li>
+            <li>The article includes a <a href="/stash-external/omnisopenme.zip">ZIP file</a> accompanied with an <a
+                    href="/stash-external/omnis-street.jpg" target="_blank">image of Omnis in Bloodhunt's Prague</a>
+            </li>
+            <li>The task is to figure out the street name that Omnis is standing on and use that as the ZIP file
+                password</li>
+            <li>After some map-searching, the conclusion is that Omnis is standing on the street <span
+                    class="correct-answer">zelezna</span>, which is the
+                correct password</li>
+            <li>Inside the ZIP file are 2 files, <a href="/stash-external/qr_code.jpg" target="_blank">qr_code.jpg</a>
+                and <a href="/stash-external/SHA.jpg" target="_blank">SHA.jpg</a></li>
+            <li>The QR code text is <q>gssor://aknncgtms.bnl/nlmhr</q>. Decrypted with a 1 shift Caesar cipher it says
+                <a href="https://www.bloodhunt.com/omnis" target="_blank">https://www.bloodhunt.com/omnis</a>
+            </li>
+            <li>Going to this page, or to <a href="https:/omnis.pages.dev" target="_blank">https:/omnis.pages.dev</a>
+                will lead to stage 1 of The Omnis Challenge</li>
+        </ul>
+
+        <a href="/" id="titleSmaller" style="font-weight: 300">Stage 1:</a>
+        <br>
+        <span id="subtitle">2,735 total attempts with 962 correct // <i class="fa-solid fa-clock"></i> 40 minutes
+            spent solving // <i class="fa-solid fa-user"></i> 498 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is <q>Enter your answer with style</q></li>
+            <li>A clue is located inside the CSS file (<b>style</b>sheet)</li>
+            <li>The clue is a HEX string, <q>56 4F 56 4C 4F 4C 54 4F 54 41 56 4F 56 41 20 52 4F 52 49 56 4F 56 45 52 4F
+                    52</q>
+            <li>When converted to ASCII, will present <q>VOVLOLTOTAVOVA RORIVOVEROR</q>.</li>
+            <li>Using Swedish <a href="https://en.wikipedia.org/wiki/R%C3%B6varspr%C3%A5ket"
+                    target="_blank">Rövarspråk</a>, this can be translated to <span class="correct-answer">Vltava
+                    River</span>, which is the correct answer
+            </li>
+        </ul>
+
+        <a href="/part2-d40d2703-e230-4786-a366-6f6e2828794b" id="titleSmaller" style="font-weight: 300">Stage 2:</a>
+        <br>
+        <span id="subtitle">1,230 total attempts with 924 correct // <i class="fa-solid fa-clock"></i> 4 minutes
+            spent solving // <i class="fa-solid fa-user"></i> 434 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The clue is in the title, <q>ISam17.51 <i class="fa-solid fa-ankh"></i></q></li>
+            <li><q>ISam17.51</q> can be found on a wall in the Garage, where using Heightened Senses will reveal the
+                text <q>Shielded by faith</q>
+            </li>
+            <li>If you type in <q>shielded by faith</q>, they will get another clue, <q>Philistine is something
+                    else.</q>
+            </li>
+            <li>The correct answer is <span class="correct-answer">Goliath</span> which is connected to the reference
+                above</li>
+        </ul>
+
+        <a href="/part3-9c615232-e6d8-46a1-ad42-c03ae9fc9703" id="titleSmaller" style="font-weight: 300">Stage 3:</a>
+        <br>
+        <span id="subtitle">9,755 total attempts with 963 correct // <i class="fa-solid fa-clock"></i> 16 hours,
+            15 minutes spent solving // <i class="fa-solid fa-user"></i> 463 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The clue is in the title <q>§1 Omnis Chambers</q></li>
+            <li>The first paragraph of text on a wall in the Omnis Chambers in Elysium reads <q>co mtpv ti deimg zdk n
+                    znhy dntc ykimzf wx ypb pvfivux ezvhzh dcost tdhiwm dqy ezh jxwe 5 rzteh.</q></li>
+            <li>This is an Enigma cipher, that when solved with various clues around the Prague map, the final answer
+                becomes <span class="correct-answer">my name is edvin and i have been living in the massive bunker under
+                    prague for the last 5 years.</span></li>
+        </ul>
+
+        <a href="/part4-61be5a2e-b8d0-47bf-8c92-f6b14f9f2ae7" id="titleSmaller" style="font-weight: 300">Stage 4:</a>
+        <br>
+        <span id="subtitle">582 total attempts with 428 correct // <i class="fa-solid fa-clock"></i> 1 minute
+            spent solving // <i class="fa-solid fa-user"></i> 275 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is a poem/riddle</li>
+            <li>The answer is <span class="correct-answer">an echo</span>, or just <span
+                    class="correct-answer">echo</span></li>
+        </ul>
+
+        <a href="/part5-8eb95950-e1f2-43b1-86f7-5bdbacfbbaaf" id="titleSmaller" style="font-weight: 300">Stage 5:</a>
+        <br>
+        <span id="subtitle">1,196 total attempts with 340 correct // <i class="fa-solid fa-clock"></i> 1 hour, 15
+            minutes spent solving // <i class="fa-solid fa-user"></i> 269 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is <q>Sky. Chambers. RF - Secrecy needed. ROT13 answer wanted.</q></li>
+            <li>Sky meaning the page title, Chambers meaning the Omnis chambers, and RF meaning the Rail fence cipher
+            </li>
+            <li>The document title is a ciphertext <q
+                    style="overflow-wrap: break-word;">sTiDOpnADnmSegoHuHhlSacAnHLdSSsAhDDsAraSetHhsytHooSunADaLAHSS</q>
+            </li>
+            <li>When decoded with Rail fence using the positions of 2 letters in Omnis Chambers (T -> 20 = key, S -> 19
+                =
+                offset). The text revealed is the path to a <a href="/stash/omnis-hands-you-another-clue.png"
+                    target="_blank">dark image</a></li>
+            <li>Manipulating the brightness on this image will give you the chance to spot sets of letters scattered
+                across the image</li>
+            <li>When these letters are combined correctly, they read F.W. Murnau, the initials of a movie director</li>
+            <li>One of the movies of said director is <q>Nosferatu</q></li>
+            <li>Entering the name and release year of the movie in ROT13, <span class="correct-answer">Abfsrengh
+                    (1922)</span> will lead to stage 6</li>
+        </ul>
+
+        <a href="/part6-cabbe8cf-cb8f-4301-9b97-9f007ac9f326" id="titleSmaller" style="font-weight: 300">Stage 6:</a>
+        <br>
+        <span id="subtitle">2,796 total attempts with 220 correct // <i class="fa-solid fa-clock"></i> 16 hours,
+            45 minutes spent solving // <i class="fa-solid fa-user"></i> 278 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is <q>Search. Listen. Report. - 🔑 Bring back an encrypted message 🔑</q></li>
+            <li>In the HTML, you will find 2 encoded HEX strings. Each one will lead to an audio file (<a
+                    href="/stash/deception.mp3" target="_blank">deception.mp3</a>, <a href="/stash/unrelated.mp3"
+                    target="_blank">unrelated.mp3</a>)</li>
+            <li>The first audio file is a reversed clip of Omnis talking in German about deception and quoting The Art
+                of War</li>
+            <li>The second audio file is a reversed clip from a documentary about The Ministry for State Security, aka
+                Stasi</li>
+            <li>Encoding the German name of the book, <q>die kunst des krieges</q> with Vigenère using the key
+                <q>stasi</q> will
+                result in <span class="correct-answer">vbe ccflt vmk dramyxs</span>, which is the correct answer
+            </li>
+        </ul>
+
+        <a href="/part7-07c84e24-8e47-445e-a8f5-aead7bbf3e22" id="titleSmaller" style="font-weight: 300">Stage 7:</a>
+        <br>
+        <span id="subtitle">344 total attempts with 231 correct // <i class="fa-solid fa-clock"></i> 7 minutes
+            spent solving // <i class="fa-solid fa-user"></i> 189 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is <q>Gallow's Hill I. Who commanded the forces?</q></li>
+            <li>This is the name of a <a href="https://whitewolf.fandom.com/wiki/Quest:Gallow%27s_Hill"
+                    target="_blank">Bloodhunt quest</a>, which has a riddle about a Swede who sacked Prague</li>
+            <li>The general referenced is <q>Hans Christoph von Königsmarck</q>, and 3 variants of that name are the
+                correct
+                answers: <span class="correct-answer">Hans Christoph von Königsmarck</span>, <span
+                    class="correct-answer">Hans Christoff von Königsmarck</span>, and <span class="correct-answer">Hans
+                    Christoff Königsmarck</span></li>
+        </ul>
+
+        <a href="/part8-87dee686-1a6f-413a-8d35-ffc3966af79a" id="titleSmaller" style="font-weight: 300">Stage 8:</a>
+        <br>
+        <span id="subtitle">4,239 total attempts with 381 correct // <i class="fa-solid fa-clock"></i> 12 hours,
+            15 minutes spent solving // <i class="fa-solid fa-user"></i> 266 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is <q>/stash/znrtsgburmvhgivvgrmkiztfv.png</q>.</li>
+            <li>Using alphabet substitution (Atbash), this becomes <a href="/stash/amightyfinestreetinprague.png"
+                    target="_blank">/stash/amightyfinestreetinprague.png</a>
+            </li>
+            <li>Going to that image, you can see an image of a street in Bloodhunt's Prague</li>
+            <li>On this street is a bar named <q>Bétlémská</q>. If you enter this, you get back <q>⬆ wxsaht oonwxscs
+                    nhlwhloly</q>
+            </li>
+            <li>If you look up to the document title, it says <q>Fancy a drink?</q></li>
+            <li>Taking the previous response through a Beaufort cipher with the key <q>yesplease</q> gives you <q>chapel
+                    merchant rthirteen</q></li>
+            <li>The same street also features a chapel called <q>Betlémská kaple</q>. This was founded in Prague in 1391
+                by
+                Wenceslas Kříž (known as <q>the Merchant</q>)</li>
+            <li>And the correct answer is Wenceslas Kriz or Wenceslas Kříž in ROT13, so <span
+                    class="correct-answer">jraprfynf xevm</span> or <span class="correct-answer">jraprfynf xříž</span>
+            </li>
+        </ul>
+
+        <a href="/part9-5576535d-d238-4f17-8f8f-84fa6d2637a6" id="titleSmaller" style="font-weight: 300">Stage 9:</a>
+        <br>
+        <span id="subtitle">1,091 total attempts with 148 correct // <i class="fa-solid fa-clock"></i> 5 hours, 20
+            minutes spent solving // <i class="fa-solid fa-user"></i> 147 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The title is <q>Never forget your past.</q> in Czech</li>
+            <li>Most text on the page appears scrambled</li>
+            <li>The input placeholder reads <q>nk-BFRT-geiKSEXpyvRRIGqfarfkrOAVLdxjgLGYlam</q></li>
+            <li>Decrypting this with Beafort (<q>-BFRT-</q> hint is in cipher and needs to be removed) using the key
+                <q>youranswer</q> (placeholder
+                was previously <q>Your answer</q>) gives you <q
+                    style="overflow-wrap: break-word;">leonsDASHcatDASHcreatedDASHthisDOTpng</q>
+            </li>
+            <li>You might guess <q>/stash/leons-cat-created-this.png</q>, but this is in a different stash 😉</li>
+            <li>The submit button instead says <q>KFBEPllutt-wffct-qvvjsqfmw</q></li>
+            <li>Decrypting this with Vigenère using the key <q>submit</q> gives you <q>SLASHstash-omnis-encrypted</q>
+            </li>
+            <li>Combining these, you get <a href="/stash-omnis-encrypted/leons-cat-created-this.png"
+                    target="_blank">/stash-omnis-encrypted/leons-cat-created-this.png</a>, which leads you to an image
+                containing Base64 text for another image</li>
+            <li>In the <a href="/stash-external/stgiles.png" target="_blank">final image</a>, it says <q>S:t Giles</q>
+                if
+                flipped and rotated (or looked at through a mirror)</li>
+            <li>This refers to the real church Bloodhunt’s Burning Church is based on</li>
+            <li>The answer is <q>Burning Church</q>, but in Czech: <span class="correct-answer">Hořící kostel</span>
+            </li>
+        </ul>
+
+        <a href="/part10-0d630934-40e1-4e03-a64d-a8fd05a4bd4d" id="titleSmaller" style="font-weight: 300">Stage 10:</a>
+        <br>
+        <span id="subtitle">3,393 total attempts with 72 correct // <i class="fa-solid fa-clock"></i> 19 hours,
+            20 minutes spent solving // <i class="fa-solid fa-user"></i> 177 people made attempts</span>
+        <ul class="list" id="subtitle">
+            <li>The final input stage</li>
+            <li>The title is <q><u><b><s>F</s></b>inal <b><s>H</s></b></u>urdle 100BC - mnlygwa gvby hnjm dpah
+                    "tjuov"</q>
+            </li>
+            <li><q>100BC</q> is Caesar's birth year, which is the cipher to solve the title</li>
+            <li>If the last part of the title is decoded with a Caesar cipher using a shift of 7 (number of characters
+                underlined), and
+                with an alphabet where F and H are removed, you get <q>decrypt your head with "mango"</q></li>
+            <li>"head" refers to the headers of the API response</li>
+            <li>A header in the check response called <q>omnis-communication</q> will include <q
+                    style="overflow-wrap: break-word;">Key + 19.8.1 ===
+                    k_vbfrt || glnmtorxpfskzngchzrohagedcwphaidvipkrjm3</q> (19.8.1 = S.H.A)</li>
+            <li>Decoding this using Variant Beaufort (vbfrt) with the key <q>mangoecddcabbfbaebbebfcaabedaa</q> (key
+                from
+                title + stage 0 QR Code SHA minus numbers) gives you <q
+                    style="overflow-wrap: break-word;">slashstashslashclassifieddashaudiodotmp3</q>
+            </li>
+            <li>This leads to <a href="/stash/classified-audio.mp3" target="_blank">/stash/classified-audio.mp3</a>,
+                which includes Morse for: <q>Omnis encountered a video of Vera being burnt to ashes, most likely by an
+                    Entity Hunter, before she
+                    could advance to the Graveyard. At least these clues did not end up in the hands of the Entity. But
+                    the
+                    circumstances
+                    surrounding Vera's destruction calls for further investigation.</q></li>
+            <li>This is a quote from a <a href="https://whitewolf.fandom.com/wiki/Quest:Missing_Agent"
+                    target="_blank">Bloodhunt quest</a></li>
+            <li>If you enter <q>vera</q> or <q>decay</q>, you get <q>gnp.TKFNWYF638/2hsats/</q></li>
+            <li>If you reverse that, you get an <a href="/stash2/836FYWNFKT.png" target="_blank">image of an in-game
+                    avatar</a></li>
+            <li>In this image is also a 13, meaning ROT13</li>
+            <li>Entering the name of the avatar and god in ROT13, <span class="correct-answer">wnahf</span> (Janus), you
+                will have entered the correct answer</li>
+            <li>You are then given <q>vfgxk://taeuk.uxr/lvalsHMuW2W8uJMC8</q></li>
+            <li>When this is decoded with Vigenère using the key <q>omnis</q>, a Google Forms link is revealed, <a
+                    href="https://forms.gle/ddmzfZUgK2J8mRYQ8" target="_blank">https://forms.gle/ddmzfZUgK2J8mRYQ8</a>
+            </li>
+            <li>That’s where the ARG continues and ends</li>
+        </ul>
+
+        <a href="https://forms.gle/ddmzfZUgK2J8mRYQ8" target="_blank" id="titleSmaller" style="font-weight: 300">Stage
+            11:</a>
+        <br>
+        <span id="subtitle">70 submissions received</span>
+        <ul class="list" id="subtitle">
+            <li>The Google Form included several encrypted questions</li>
+            <li>To win, you needed to decrypt the questions, answer them, and send them back encrypted</li>
+            <li><b>Question 1:</b> What is the reason as to why Omnis is refered to as they? <span
+                    class="correct-answer">Omnis is not only a single individual, but also a collective combined with
+                    they/them pronouns</span></li>
+            <li><b>Question 2:</b> What is Omnis' favorite type of food? <span class="correct-answer">Rats</span>
+                (accepted variants in substitute: animal blood) (and if with great (other) answers: vitae/blood)</li>
+            <li><b>Question 3:</b> Upon searching for a missing agent in Prague, Omnis sent you to Rudolfinum. Nearby
+                the clue you could see a poster, what letters are featured on this poster? <span
+                    class="correct-answer">Parsifal</span> (variants like Parsital accepted)</li>
+            <li><b>Question 4:</b> Consider a scenario where a malicious actor has exploited a vulnerability in a web
+                application to gain access to its
+                backend database. They now have access to sensitive user data, including usernames, passwords, and
+                personal information.
+                What are some steps that can be taken to mitigate the damage caused by such a breach?
+                <span class="correct-answer">
+                    While mitigating the damage from such an attack is quite a hassle, it
+                    involves temporarily disabling the application
+                    (and network), and shutting down the service, to then do a full investigation into how the
+                    perpetrators gained access
+                    and then resolving the issue. Then, upon going live making sure to immediately force all the users
+                    for that web application to update their passwords. Additionally, enforcing some kind of
+                    2FA-solution is recommended.</span> (There are several more correct answers for this one)
+            </li>
+        </ul>
+
+        <span id="title">Thanks for playing!</span>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+/* 56 4F 56 4C 4F 4C 54 4F 54 41 56 4F 56 41 20 52 4F 52 49 56 4F 56 45 52 4F 52 */
+
+@font-face {
+  font-family: "din-condensed";
+  src: url("../fonts/DNC57.otf");
+}
+
+@font-face {
+  font-family: "din-condensed-light";
+  src: url("../fonts/DNC47.otf");
+}
+
+body {
+  margin: 0;
+  /* background-color: black; */
+  background: url("../images/bg.webp") no-repeat center center fixed;
+  background-size: cover;
+  display: grid;
+  text-align: center;
+}
+
+body.in-iframe {
+  background: transparent !important;
+}
+
+.container {
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  min-height: 100vh;
+}
+
+#title {
+  font-family: din-condensed, sans-serif;
+  font-size: 2.7rem;
+  color: #e31717;
+  transition: font-size 0.1s ease-in-out;
+}
+
+#titleSmaller {
+  font-family: din-condensed, sans-serif;
+  font-size: 1.8rem;
+  color: #e31717;
+  transition: font-size 0.1s ease-in-out;
+}
+
+#subtitle {
+  font-family: din-condensed-light, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 1.5rem;
+  color: #e31717;
+}
+
+body.in-iframe #title,
+body.in-iframe #subtitle {
+  background-color: black;
+  padding: 0 0.5rem;
+  margin-top: 0;
+}
+
+#inputArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 250px;
+  width: 50%;
+  transition: width 0.1s ease-in-out;
+}
+
+#textInput {
+  font-family: din-condensed, sans-serif;
+  font-size: 1.3rem;
+  background-color: #000000bf;
+  border: 1px solid #fff6;
+  border-radius: 0;
+  color: #fff;
+  height: 64px;
+  line-height: 27px;
+  outline: none;
+  padding: 5px 10px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    height 0.1s ease-in-out, font-size 0.1s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+#textInput:hover {
+  border-color: #f1890d99;
+  box-shadow: 0 1px 12px #f1890d4d;
+}
+
+#textInput:focus {
+  border-color: #f1890d;
+}
+
+#textInput:disabled {
+  cursor: not-allowed;
+}
+
+button {
+  font-family: din-condensed-light, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #e31717;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem;
+  height: 52px;
+  transition: height 0.1s ease-in-out;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+button:active {
+  opacity: 80%;
+  border-radius: 100;
+}
+
+button:disabled {
+  border: 1px solid #e31717;
+  background-color: #0f0f0f;
+  cursor: not-allowed;
+  opacity: 100%;
+}
+
+#response {
+  color: white;
+  font-family: din-condensed-light, sans-serif;
+  font-size: 2rem;
+  transition: font-size 0.1s ease-in-out;
+}
+
+a {
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f1890d !important;
+}
+
+/* All transitions here are done at 0.1s */
+@media screen and (max-width: 600px), screen and (max-height: 375px) {
+  #title {
+    font-size: 2.2rem;
+  }
+  #titleSmaller {
+    font-size: 1.5rem;
+  }
+  #inputArea {
+    width: 70%;
+  }
+  #textInput {
+    height: 50px;
+    font-size: 1.1rem;
+  }
+  button {
+    height: auto;
+  }
+  #response {
+    font-size: 1.6rem;
+  }
+}

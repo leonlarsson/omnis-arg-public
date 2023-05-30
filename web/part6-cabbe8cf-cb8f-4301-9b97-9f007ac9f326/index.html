@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omnis Challenge</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <span id="title">Search. Listen. Report<br />🔑 Bring back an encrypted message 🔑</span>
+        <!-- 2FOMNIS73OMNIS74OMNIS61OMNIS73OMNIS68OMNIS2FOMNIS64OMNIS65OMNIS63OMNIS65OMNIS70OMNIS74OMNIS69OMNIS6FOMNIS6EOMNIS2EOMNIS6DOMNIS70OMNIS33OMNIS -->
+        <!-- 2FOMNIS73OMNIS74OMNIS61OMNIS73OMNIS68OMNIS2FOMNIS75OMNIS6EOMNIS72OMNIS65OMNIS6COMNIS61OMNIS74OMNIS65OMNIS64OMNIS2EOMNIS6DOMNIS70OMNIS33OMNIS -->
+        <span id="subtitle">
+            <a href="../about" style="font-weight: 300;">[Spoilers] The Omnis Challenge is completed</a>
+            <br>
+            27,361 total attempts were made
+        </span>
+        <div id="inputArea">
+            <input autofocus id="textInput" type="text" maxlength=60 placeholder="Your answer" />
+            <button id="submitButton">Submit</button>
+        </div>
+        <p id="response">Awaiting...</p>
+    </div>
+
+    <script type="module">
+        import { fetchAPI } from "../assets/js/script.js";
+        document.getElementById("textInput").onkeydown = e => e.keyCode === 13 ? fetchAPI("/part6-cabbe8cf-cb8f-4301-9b97-9f007ac9f326") : null;
+        document.getElementById("submitButton").onclick = () => fetchAPI("/part6-cabbe8cf-cb8f-4301-9b97-9f007ac9f326");
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omnis Challenge</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <span id="title"><u><b><s>F</s></b>inal <b><s>H</s></b></u>urdle 100BC<br />mnlygwa gvby hnjm dpah
+            "tjuov"</span>
+        <span id="subtitle">
+            <a href="../about" style="font-weight: 300;">[Spoilers] The Omnis Challenge is completed</a>
+            <br>
+            27,361 total attempts were made
+        </span>
+        <div id="inputArea">
+            <input autofocus id="textInput" type="text" maxlength=60 placeholder="Your answer" />
+            <button id="submitButton">Submit</button>
+        </div>
+        <p id="response">Awaiting...</p>
+    </div>
+
+    <script type="module">
+        import { fetchAPI } from "../assets/js/script.js";
+        document.getElementById("textInput").onkeydown = e => e.keyCode === 13 ? fetchAPI("/part10-0d630934-40e1-4e03-a64d-a8fd05a4bd4d") : null;
+        document.getElementById("submitButton").onclick = () => fetchAPI("/part10-0d630934-40e1-4e03-a64d-a8fd05a4bd4d");
+    </script>
+
+</body>
+
+</html>

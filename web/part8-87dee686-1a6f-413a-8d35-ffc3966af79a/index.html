@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy a drink?</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <span id="title">/stash/znrtsgburmvhgivvgrmkiztfv.png</span>
+        <span id="subtitle">
+            <a href="../about" style="font-weight: 300;">[Spoilers] The Omnis Challenge is completed</a>
+            <br>
+            27,361 total attempts were made
+        </span>
+        <div id="inputArea">
+            <input autofocus id="textInput" type="text" maxlength=60 placeholder="Your answer" />
+            <button id="submitButton">Submit</button>
+        </div>
+        <p id="response">Awaiting...</p>
+    </div>
+
+    <script type="module">
+        import { fetchAPI } from "../assets/js/script.js";
+        document.getElementById("textInput").onkeydown = e => e.keyCode === 13 ? fetchAPI("/part8-87dee686-1a6f-413a-8d35-ffc3966af79a") : null;
+        document.getElementById("submitButton").onclick = () => fetchAPI("/part8-87dee686-1a6f-413a-8d35-ffc3966af79a");
+    </script>
+
+</body>
+
+</html>

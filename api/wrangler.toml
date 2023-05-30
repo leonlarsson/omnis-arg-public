@@ -1,0 +1,7 @@
+name = "omnis-arg-api-public"
+compatibility_date = "2023-03-15"
+main="./index.ts"
+
+kv_namespaces = [
+  { binding = "RATELIMITS", id = "9063db256d564586ab795b4bb7c6565f", preview_id = "9063db256d564586ab795b4bb7c6565f" }
+]

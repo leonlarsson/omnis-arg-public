@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omnis Challenge</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <span id="titleSmaller" style="white-space: pre-line">
+            In sooth, what be I that speak sans mouth,
+            and hear sans ears, in ways uncouth?
+            Of flesh or form, I have no sight,
+            Yet wind's sweet kiss brings me to light.
+
+            What creature am I, one might ask,
+            Whose form eludes the mortal task?
+            Nay, I be none, save for the breeze,
+            That rouses me from my great peace.
+        </span>
+        <span id="subtitle">
+            <a href="../about" style="font-weight: 300;">[Spoilers] The Omnis Challenge is completed</a>
+            <br>
+            27,361 total attempts were made
+        </span>
+        <div id="inputArea">
+            <input autofocus id="textInput" type="text" maxlength=60 placeholder="Your answer" />
+            <button id="submitButton">Submit</button>
+        </div>
+        <p id="response">Awaiting...</p>
+    </div>
+
+    <script type="module">
+        import { fetchAPI } from "../assets/js/script.js";
+        document.getElementById("textInput").onkeydown = e => e.keyCode === 13 ? fetchAPI("/part4-61be5a2e-b8d0-47bf-8c92-f6b14f9f2ae7") : null;
+        document.getElementById("submitButton").onclick = () => fetchAPI("/part4-61be5a2e-b8d0-47bf-8c92-f6b14f9f2ae7");
+    </script>
+
+</body>
+
+</html>

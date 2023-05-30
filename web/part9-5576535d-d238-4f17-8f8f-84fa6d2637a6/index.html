@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omnis Challenge</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <span id="title">Nikdy nezapomeň na svou minulost.</span>
+        <span id="subtitle">
+            <a href="../about" style="font-weight: 300;">[Spoilers] The Omnis Challenge is completed</a>
+            <br>
+            27,361 total attempts were made
+        </span>
+        <div id="inputArea">
+            <input autofocus id="textInput" type="text" maxlength=60
+                placeholder="nk-BFRT-geiKSEXpyvRRIGqfarfkrOAVLdxjgLGYlam" />
+            <button id="submitButton">KFBEPllutt-wffct-qvvjsqfmw</button>
+        </div>
+        <p id="response">Čekání...</p>
+    </div>
+
+    <script type="module">
+        import { fetchAPI } from "../assets/js/script.js";
+        document.getElementById("textInput").onkeydown = e => e.keyCode === 13 ? fetchAPI("/part9-5576535d-d238-4f17-8f8f-84fa6d2637a6") : null;
+        document.getElementById("submitButton").onclick = () => fetchAPI("/part9-5576535d-d238-4f17-8f8f-84fa6d2637a6");
+    </script>
+
+</body>
+
+</html>
